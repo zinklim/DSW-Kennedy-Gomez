@@ -2,9 +2,11 @@
     text-align: center;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #005883;
+    background: #fae41b;
+    
     
 }
+
 .menuCSS3 ul {
     display: flex;
     padding: 0;
@@ -16,7 +18,7 @@
 .menuCSS3 a {
     display: block;
     padding: 2em;
-    background-color: #F9B53C;
+    background-color: #4cc3fa;
     text-decoration: none;
     color: #191C26;
     serif;
@@ -31,7 +33,6 @@
 }
 .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
     display: block;
-   
 }
 .tabla{
     width: auto;
@@ -41,10 +42,6 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
-
-
-
 iframe{
     width: 80%;
     height: 90vh;
@@ -74,4 +71,95 @@ footer{
 }
 .sociales a{
     padding: 10px;
+}
+
+  *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    
+  }
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+   
+}
+.slider ul{
+    
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider imag{
+    
+    width: 90%;
+    height: 90%;
+
+}
+
+@keyframes cambio{
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left:-300%;}
+    100%{ margin-left: -300%;}
+}
+
+
+.banner{
+    width: 400px;
+    height: 400px;
+    border: 10px solid #33cccc;
+    margin: auto;
+    animation: banner 10s infinite;
+   
+    background-size: 100% 100%;
+   
+
+}
+@keyframes banner{
+    0%,30%{
+        background-image: 
+        url(imagenes/banner\ 1.jpeg);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.5;
+    }
+    35%, 65%{
+        background-image: 
+        url(imagenes/banner\ 2.jpeg);
+        opacity: 1;
+    }
+    66%,69%{
+        opacity: 0.5%;
+    }
+    70%,100%{
+        background-image: 
+        url(imagenes/banner\ 3.jpeg);
+    }
+
+}
+@media only screen and (min-width:400px) and (max-width:400px)
+
+{
+    .banner{
+        width: 400px;
+        height: 400px;
+    }
+
 }
